@@ -9,4 +9,6 @@ git remote add <name> <url>
 git add <archivo>
 git add .
 git commit -m "mensaje"
-git push <nombre remoto> <nombre de tu rama>
+git push <nombre remoto> <nombre rama>
+git pull <nombre remoto> <nombre rama>
+ 
