@@ -1,7 +1,7 @@
 # Egg-Backend-1
 Curso de programacion de egg
 
-Comandos Git
+Comandos Git:
 
 git init
 git status
