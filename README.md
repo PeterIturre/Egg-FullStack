@@ -6,6 +6,7 @@ Comandos Git:
 git init
 git status
 git remote add <name> <url>
+git remote -v
 git add <archivo>
 git add .
 git commit -m "mensaje"
