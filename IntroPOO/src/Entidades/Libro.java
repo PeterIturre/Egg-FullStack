@@ -1,4 +1,4 @@
-package Ejercicio1POO.Libro;
+package Entidades;
 
 import java.util.Scanner;
 

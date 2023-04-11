@@ -1,8 +1,8 @@
 package EjerciciosPOO;
 
-import Ejercicio1POO.Libro.Libro;
+import Entidades.Libro;
 
-public class Main {
+public class MainLibros {
     public static void main(String[] args) {
         
         Libro a = new Libro();
