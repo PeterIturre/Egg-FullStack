@@ -8,14 +8,14 @@ getters y setters correspondientes.
 package Entidades;
 
 public class Cancion {
-    
+
     private String titulo;
     private String autor;
-    
-    public Cancion(){
+
+    public Cancion() {
         this.titulo = "";
         this.autor = "";
-        
+
     }
 
     public Cancion(String titulo, String autor) {
@@ -43,5 +43,4 @@ public class Cancion {
     public String toString() {
         return "Canciones{" + "titulo=" + titulo + ", autor=" + autor + '}';
     }
-     
 }
