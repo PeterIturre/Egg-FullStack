@@ -4,13 +4,16 @@ import Entidades.Cafetera;
 
 public class CafeteraServicio {
 
-    Cafetera c = new Cafetera();
+    public Cafetera crearCafetera() {
+        Cafetera c = new Cafetera();
+        return c;
+    }
 
-    public void llenarCafetera() {
+    public void llenarCafetera(Cafetera c) {
         c.setCantidadActual(c.getCapacidadMaxima());
     }
 
-    public void servirTaza(int tamañoTaza) {
+    public void servirTaza(int tamañoTaza, Cafetera c) {
 
         if (tamañoTaza <= c.getCantidadActual()) {
             System.out.println("Sirviendo cafe...");
@@ -23,11 +26,11 @@ public class CafeteraServicio {
         }
     }
 
-    public void vaciarCafetera() {
+    public void vaciarCafetera(Cafetera c) {
         c.setCantidadActual(0);
     }
 
-    public void agregarCafe(int cafe) {
+    public void agregarCafe(int cafe, Cafetera c) {
         c.setCantidadActual(cafe);
 
         if (c.getCantidadActual() > c.getCapacidadMaxima()) {

@@ -10,7 +10,7 @@ public class Cafe {
 
         Scanner input = new Scanner(System.in);
         CafeteraServicio cs = new CafeteraServicio();
-        Cafetera c = new Cafetera();
+        Cafetera c = cs.crearCafetera();
 
         do {
 
@@ -29,24 +29,24 @@ public class Cafe {
 
                 case 1:
                     System.out.println("Llenando cafetera...");
-                    cs.llenarCafetera();
+                    cs.llenarCafetera(c);
                     System.out.println("La cafetera tiene " + c.getCantidadActual() + " ml");
                     break;
                 case 2:
                     System.out.println("Vaciando cafetera...");
-                    cs.vaciarCafetera();
+                    cs.vaciarCafetera(c);
                     System.out.println("La cafetera tiene " + c.getCantidadActual() + "ml");
                     break;
                 case 3:
                     System.out.println("Sirviendo cafe...");
                     System.out.print("Cuanto cafe quiere servir en la taza: ");
-                    cs.servirTaza(input.nextInt());
+                    cs.servirTaza(input.nextInt(), c);
                     System.out.println("La taza tiene " + c.getCantidadActual());
                     break;
                 case 4:
                     System.out.println("Agregando cafe...");
-                    System.out.print("Cuanto cafe quiere agregar: ");
-                    cs.agregarCafe(input.nextInt());
+                    System.out.print("Cuanto cafe quiere agregar: "); // arreglar
+                    cs.agregarCafe(input.nextInt(), c);
                     break;
                 case 5:
                     continue;
