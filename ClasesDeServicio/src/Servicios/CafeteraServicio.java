@@ -31,7 +31,7 @@ public class CafeteraServicio {
     }
 
     public void agregarCafe(int cafe, Cafetera c) {
-        c.setCantidadActual(cafe);
+        c.setCantidadActual(c.getCantidadActual() + cafe);
 
         if (c.getCantidadActual() > c.getCapacidadMaxima()) {
             System.out.println("Se revalso la cafetera...");

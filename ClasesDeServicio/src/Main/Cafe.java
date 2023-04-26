@@ -45,7 +45,7 @@ public class Cafe {
                     break;
                 case 4:
                     System.out.println("Agregando cafe...");
-                    System.out.print("Cuanto cafe quiere agregar: "); // arreglar
+                    System.out.print("Cuanto cafe quiere agregar: ");
                     cs.agregarCafe(input.nextInt(), c);
                     break;
                 case 5:
