@@ -2,7 +2,7 @@ package Main;
 
 import Servicios.ArregloService;
 
-public class Ejercicio2Arreglos {
+public class Ejercicio3Arreglos {
 
     public static void main(String[] args) {
         
