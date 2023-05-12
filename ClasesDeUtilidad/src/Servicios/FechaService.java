@@ -1,5 +1,7 @@
 package Servicios;
 
+import java.time.temporal.ChronoUnit;
+import java.time.temporal.Temporal;
 import java.util.Date;
 import java.util.Scanner;
 
@@ -36,8 +38,9 @@ public class FechaService {
     }
 
     // Hacemos la diferencia entre la fecha actual y la fecha de nacimiento
-    public int diferenciaFechas(Date fechaActual, Date fechaNacimiento) {
-        return (int) Math.floor((fechaActual.getTime() - fechaNacimiento.getTime()) / 3.154e+10);
+    public long diferenciaFechas(Temporal fechaActual, Temporal fechaNacimiento) {
+        //return (int) Math.floor((fechaActual.getTime() - fechaNacimiento.getTime()) / 3.154e+10);
+        long años = ChronoUnit.YEARS.between(fechaNacimiento, fechaActual);
+        return años;   
     }
-
 }
