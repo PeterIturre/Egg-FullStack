@@ -3,20 +3,20 @@ package Entidades;
 public class Curso {
 
     private String nombreCurso;
-    private int cantidadHorasPorDia;
-    private int csntidadDiasPorSemana;
+    private double cantidadHorasPorDia;
+    private int cantidadDiasPorSemana;
     private char turno;
     private double precioPorHora;
 
-    private String[] alumnos = new String[5];
+    private String[] alumnos;
 
     public Curso() {
     }
 
-    public Curso(String nombreCurso, int cantidadHorasPorDia, int csntidadDiasPorSemana, char turno, double precioPorHora) {
+    public Curso(String nombreCurso, double cantidadHorasPorDia, int cantidadDiasPorSemana, char turno, double precioPorHora) {
         this.nombreCurso = nombreCurso;
         this.cantidadHorasPorDia = cantidadHorasPorDia;
-        this.csntidadDiasPorSemana = csntidadDiasPorSemana;
+        this.cantidadDiasPorSemana = cantidadDiasPorSemana;
         this.turno = turno;
         this.precioPorHora = precioPorHora;
     }
@@ -25,12 +25,12 @@ public class Curso {
         return nombreCurso;
     }
 
-    public int getCantidadHorasPorDia() {
+    public double getCantidadHorasPorDia() {
         return cantidadHorasPorDia;
     }
 
-    public int getCsntidadDiasPorSemana() {
-        return csntidadDiasPorSemana;
+    public int getCantidadDiasPorSemana() {
+        return cantidadDiasPorSemana;
     }
 
     public char getTurno() {
@@ -49,12 +49,12 @@ public class Curso {
         this.nombreCurso = nombreCurso;
     }
 
-    public void setCantidadHorasPorDia(int cantidadHorasPorDia) {
+    public void setCantidadHorasPorDia(double cantidadHorasPorDia) {
         this.cantidadHorasPorDia = cantidadHorasPorDia;
     }
 
-    public void setCsntidadDiasPorSemana(int csntidadDiasPorSemana) {
-        this.csntidadDiasPorSemana = csntidadDiasPorSemana;
+    public void setCantidadDiasPorSemana(int cantidadDiasPorSemana) {
+        this.cantidadDiasPorSemana = cantidadDiasPorSemana;
     }
 
     public void setTurno(char turno) {
