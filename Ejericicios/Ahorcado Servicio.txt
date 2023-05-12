@@ -1,0 +1,40 @@
+// Ver si funca
+    public boolean buscar(Ahorcado a, String letra) {
+        for (String i : a.getBuscar()) {
+            if (i.equals(letra)) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    public boolean encontradas(Ahorcado a, String letra) {
+
+        for (String i : a.getBuscar()) {
+            if (i.equals(letra)) {
+                a.setLetrasEncontradas(a.getLetrasEncontradas() + 1);
+                return true;
+            }
+        }
+
+        System.out.println("Se han encontrado " + a.getLetrasEncontradas() + " letras");
+
+        return false;
+    }
+
+    public int intentos(Ahorcado a) {
+        return 
+        /*
+        para mostrar cuántas oportunidades le queda al
+jugador.
+         */
+    }
+
+    public void juego() {
+        /*
+        el método juego se encargará de llamar todos los
+métodos previamente mencionados e informará cuando el usuario
+descubra toda la palabra o se quede sin intentos. Este método se
+llamará en el main.
+         */
+    }
