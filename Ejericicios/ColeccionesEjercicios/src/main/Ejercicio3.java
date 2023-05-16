@@ -27,7 +27,7 @@ public class Ejercicio3 {
         System.out.println("Ingrese el nombre del alumno para calcular la nota final: ");
         
         if (as.buscarAlumno(input.next())) {
-            System.out.println("La nota final del alumno es: "+ as.notaFinal());
+            //System.out.println("La nota final del alumno es: "+ as.notaFinal());
         }
         
     }

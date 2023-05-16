@@ -17,11 +17,11 @@ public class AlumnoService {
 
         ArrayList<Integer> notas = new ArrayList();
 
-        for (int i = 0; i < 2; i++) {
+        for (int i = 0; i < 3; i++) {
             System.out.print("Ingrese la nota n°" + (i + 1) + ": ");
             notas.add(input.nextInt());
         }
-        
+                       
         alumnos.add(new Alumno(nombre, notas));
     }
 
@@ -44,10 +44,11 @@ public class AlumnoService {
         return false;
     }
     
+    //TODO 
     public double notaFinal(String alumno) {
         Iterator<Alumno> it = alumnos.iterator();
         
-        it.next().getNombre().get
-        return ;
-    }
+        //it.next().getNombre().get
+        //return ;
+    //}
 }

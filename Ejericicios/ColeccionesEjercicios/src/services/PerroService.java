@@ -19,26 +19,33 @@ public class PerroService {
         String raza = input.nextLine();
 
         Perro p = new Perro(nombre, raza);
-        
+
         lista.add(p);
-        
+
         return p;
     }
 
     public void mostrarPerro() {
         System.out.println(lista);
     }
-    
+
     public void eliminarPerro(String perro) {
         Iterator<Perro> it = lista.iterator();
-        
+
+        boolean x = false;
+
         while (it.hasNext()) {
-            
             if (it.next().getNombre().equalsIgnoreCase(perro)) {
                 it.remove();
-            } else {
-                System.out.println("No se encontro el Perro");
+
+                x = true;
             }
-        }    
+        }
+
+        if (x) {
+            System.out.println(perro + " se ha eliminado correctamente");
+        } else {
+            System.out.println(perro + " no se encuentra en la lista");
+        }
     }
 }

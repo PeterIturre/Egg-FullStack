@@ -20,18 +20,25 @@ public class Colecciones {
 
         System.out.println(lista);
 
+        lista.remove((Integer) 40);
+
+        System.out.println(lista);
         
+        // lista.forEach((e)->System.out.println(e));  // Es otra forma de recorrer la lista (ForEach mas reducido)
+        // lista.stream().count;  //Investigar
+
         System.out.println("-------------- removeIf --------------");
         ArrayList<String> listaPalabras = new ArrayList();
 
         listaPalabras.add("PEDRO");
         listaPalabras.add("FEDE");
+        listaPalabras.add("FEDE");
         listaPalabras.add("RAFA");
-        
+
         System.out.println(listaPalabras);
 
         listaPalabras.removeIf(i -> (i.equals("FEDE")));
-        
+
         System.out.println(listaPalabras);
 
         System.out.println("-------------- HashSet --------------");
@@ -54,7 +61,7 @@ public class Colecciones {
 
         System.out.println(persona);
 
-        //persona.remove(43243106);
+        persona.remove(43243106);
         System.out.println(persona);
 
         System.out.println("-------------- forEach --------------");
@@ -79,7 +86,7 @@ public class Colecciones {
         System.out.println("Elementos de la lista: ");
 
         iterator.hasNext();
-        
+
         while (iterator.hasNext()) {
             System.out.print(iterator.next() + " ");
         }
@@ -96,7 +103,7 @@ public class Colecciones {
         System.out.println(bebidas);
 
         Iterator<String> it = bebidas.iterator();
-        
+
         while (it.hasNext()) {
             if (it.next().equals("cafe")) {
                 it.remove();
