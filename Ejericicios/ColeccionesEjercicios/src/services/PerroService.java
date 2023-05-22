@@ -11,18 +11,14 @@ public class PerroService {
     Scanner input = new Scanner(System.in);
     List<Perro> lista = new ArrayList();
 
-    public Perro agregarPerro() {
+    public void agregarPerro() {
 
         System.out.print("Ingrese el nombre del perro: ");
         String nombre = input.nextLine();
         System.out.print("Ingrese el nombre del raza: ");
         String raza = input.nextLine();
 
-        Perro p = new Perro(nombre, raza);
-
-        lista.add(p);
-
-        return p;
+        lista.add(new Perro(nombre, raza));
     }
 
     public void mostrarPerro() {

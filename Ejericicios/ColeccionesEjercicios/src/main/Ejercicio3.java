@@ -19,17 +19,18 @@ public class Ejercicio3 {
                 System.out.println("Saliendo del sistema... ");
                 break;
             }
-            
+
         } while (true);
 
         as.mostrarAlumnos();
 
-        System.out.println("Ingrese el nombre del alumno para calcular la nota final: ");
-        
-        if (as.buscarAlumno(input.next())) {
-            //System.out.println("La nota final del alumno es: "+ as.notaFinal());
-        }
-        
-    }
+        System.out.print("Ingrese el nombre del alumno para calcular la nota final: ");
 
+        String alumn = input.next();
+
+        if (as.buscarAlumno(alumn)) {
+            System.out.println("La nota final del alumno es: " + as.notaFinal(alumn));
+            //as.notaFinal(alumn);
+        }
+    }
 }
