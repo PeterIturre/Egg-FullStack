@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="entidades">
+  <ClassDiagramComponents>
+    <Class name="DNI" package="entidades" visibility="public" xPosition="577.0" yPosition="23.0">
+      <Fields>
+        <Field name="serie" type="String" visibility="package"/>
+        <Field name="numero" type="long" visibility="package"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="String" name="serie"/>
+          <Argument type="long" name="numero"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getSerie" returnType="String" visibility="public"/>
+        <Method name="setSerie" returnType="void" visibility="public">
+          <Argument type="String" name="serie"/>
+        </Method>
+        <Method name="getNumero" returnType="long" visibility="public"/>
+        <Method name="setNumero" returnType="void" visibility="public">
+          <Argument type="long" name="numero"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Equipo" package="entidades" visibility="public" xPosition="20.0" yPosition="399.0">
+      <Fields>
+        <Field name="plantel" type="List&lt;Jugador&gt;" visibility="package"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="List&lt;Jugador&gt;" name="plantel"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getPlantel" returnType="List&lt;Jugador&gt;" visibility="public"/>
+        <Method name="setPlantel" returnType="void" visibility="public">
+          <Argument type="List&lt;Jugador&gt;" name="plantel"/>
+        </Method>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Jugador" package="entidades" visibility="public" xPosition="453.0" yPosition="399.0">
+      <Fields>
+        <Field name="nombre" type="String" visibility="package"/>
+        <Field name="apellido" type="String" visibility="package"/>
+        <Field name="posicion" type="String" visibility="package"/>
+        <Field name="numero" type="int" visibility="package"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="String" name="nombre"/>
+          <Argument type="String" name="apellido"/>
+          <Argument type="String" name="posicion"/>
+          <Argument type="int" name="numero"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getNombre" returnType="String" visibility="public"/>
+        <Method name="setNombre" returnType="void" visibility="public">
+          <Argument type="String" name="nombre"/>
+        </Method>
+        <Method name="getApellido" returnType="String" visibility="public"/>
+        <Method name="setApellido" returnType="void" visibility="public">
+          <Argument type="String" name="apellido"/>
+        </Method>
+        <Method name="getPosicion" returnType="String" visibility="public"/>
+        <Method name="setPosicion" returnType="void" visibility="public">
+          <Argument type="String" name="posicion"/>
+        </Method>
+        <Method name="getNumero" returnType="int" visibility="public"/>
+        <Method name="setNumero" returnType="void" visibility="public">
+          <Argument type="int" name="numero"/>
+        </Method>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Persona" package="entidades" visibility="public" xPosition="20.0" yPosition="23.0">
+      <Fields>
+        <Field name="nombre" type="String" visibility="package"/>
+        <Field name="apellido" type="String" visibility="package"/>
+        <Field name="documento" type="DNI" visibility="package"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="String" name="nombre"/>
+          <Argument type="String" name="apellido"/>
+          <Argument type="DNI" name="documento"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getNombre" returnType="String" visibility="public"/>
+        <Method name="setNombre" returnType="void" visibility="public">
+          <Argument type="String" name="nombre"/>
+        </Method>
+        <Method name="getApellido" returnType="String" visibility="public"/>
+        <Method name="setApellido" returnType="void" visibility="public">
+          <Argument type="String" name="apellido"/>
+        </Method>
+        <Method name="getDocumento" returnType="DNI" visibility="public"/>
+        <Method name="setDocumento" returnType="void" visibility="public">
+          <Argument type="DNI" name="documento"/>
+        </Method>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <HasRelation name="documento" source="entidades.Persona" target="entidades.DNI" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="plantel" source="entidades.Equipo" target="entidades.Jugador" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="List&lt;Jugador&gt;"/>
+    <UseRelation source="entidades.Persona" target="entidades.DNI" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="entidades.Equipo" target="entidades.Jugador" sourceCardinality="1..1" targetCardinality="1..1"/>
+  </ClassDiagramRelations>
+</ClassDiagram>

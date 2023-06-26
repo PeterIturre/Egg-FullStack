@@ -1,0 +1,2 @@
+Relaciones: Extras y Check
+Herencia: Todo

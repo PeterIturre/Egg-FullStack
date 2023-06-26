@@ -19,7 +19,7 @@ public class CuentaBancariaService {
 
         return cb;
     }
-
+         
     public double ingresar(double deposito) {
         cb.setSaldoActual(cb.getSaldoActual() + deposito);
 

@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="entidades">
+  <ClassDiagramComponents>
+    <Class name="Baraja" package="entidades" visibility="public" xPosition="31.0" yPosition="39.0">
+      <Fields>
+        <Field name="cartas" type="ArrayList&lt;Carta&gt;" visibility="package"/>
+        <Field name="cartasMonton" type="ArrayList&lt;Carta&gt;" visibility="package"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="barajar" returnType="void" visibility="public"/>
+        <Method name="siguienteCarta" returnType="void" visibility="public"/>
+        <Method name="cartasDisponibles" returnType="int" visibility="public"/>
+        <Method name="dasCartas" returnType="void" visibility="public">
+          <Argument type="int" name="num"/>
+        </Method>
+        <Method name="cartasMonton" returnType="void" visibility="public"/>
+        <Method name="mostrarBaraja" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Carta" package="entidades" visibility="public" xPosition="368.0" yPosition="39.0">
+      <Fields>
+        <Field name="palo" type="Palo" visibility="package"/>
+        <Field name="numero" type="int" visibility="package"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="Palo" name="palo"/>
+          <Argument type="int" name="numero"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getPalo" returnType="Palo" visibility="public"/>
+        <Method name="setPalo" returnType="void" visibility="public">
+          <Argument type="Palo" name="palo"/>
+        </Method>
+        <Method name="getNumero" returnType="int" visibility="public"/>
+        <Method name="setNumero" returnType="void" visibility="public">
+          <Argument type="int" name="numero"/>
+        </Method>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="DNI" package="entidades" visibility="public" xPosition="2.0" yPosition="498.0">
+      <Fields>
+        <Field name="serie" type="String" visibility="package"/>
+        <Field name="numero" type="long" visibility="package"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="String" name="serie"/>
+          <Argument type="long" name="numero"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getSerie" returnType="String" visibility="public"/>
+        <Method name="setSerie" returnType="void" visibility="public">
+          <Argument type="String" name="serie"/>
+        </Method>
+        <Method name="getNumero" returnType="long" visibility="public"/>
+        <Method name="setNumero" returnType="void" visibility="public">
+          <Argument type="long" name="numero"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Equipo" package="entidades" visibility="public" xPosition="665.0" yPosition="1087.0">
+      <Fields>
+        <Field name="plantel" type="List&lt;Jugador&gt;" visibility="package"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="List&lt;Jugador&gt;" name="plantel"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getPlantel" returnType="List&lt;Jugador&gt;" visibility="public"/>
+        <Method name="setPlantel" returnType="void" visibility="public">
+          <Argument type="List&lt;Jugador&gt;" name="plantel"/>
+        </Method>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Juego" package="entidades" visibility="public" xPosition="1181.0" yPosition="579.0">
+      <Fields>
+        <Field name="jugadores" type="ArrayList&lt;JugadorRuleta&gt;" visibility="package"/>
+        <Field name="revolver" type="Revolver" visibility="package"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="ArrayList&lt;JugadorRuleta&gt;" name="jugadores"/>
+          <Argument type="Revolver" name="revolver"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getJugadores" returnType="ArrayList&lt;JugadorRuleta&gt;" visibility="public"/>
+        <Method name="setJugadores" returnType="void" visibility="public">
+          <Argument type="ArrayList&lt;JugadorRuleta&gt;" name="jugadores"/>
+        </Method>
+        <Method name="getRevolver" returnType="Revolver" visibility="public"/>
+        <Method name="setRevolver" returnType="void" visibility="public">
+          <Argument type="Revolver" name="revolver"/>
+        </Method>
+        <Method name="toString" returnType="String" visibility="public"/>
+        <Method name="llenarJuego" returnType="void" visibility="public">
+          <Argument type="ArrayList&lt;JugadorRuleta&gt;" name="jugadores"/>
+          <Argument type="Revolver" name="r"/>
+        </Method>
+        <Method name="ronda" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Jugador" package="entidades" visibility="public" xPosition="59.0" yPosition="1001.0">
+      <Fields>
+        <Field name="nombre" type="String" visibility="package"/>
+        <Field name="apellido" type="String" visibility="package"/>
+        <Field name="posicion" type="String" visibility="package"/>
+        <Field name="numero" type="int" visibility="package"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="String" name="nombre"/>
+          <Argument type="String" name="apellido"/>
+          <Argument type="String" name="posicion"/>
+          <Argument type="int" name="numero"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getNombre" returnType="String" visibility="public"/>
+        <Method name="setNombre" returnType="void" visibility="public">
+          <Argument type="String" name="nombre"/>
+        </Method>
+        <Method name="getApellido" returnType="String" visibility="public"/>
+        <Method name="setApellido" returnType="void" visibility="public">
+          <Argument type="String" name="apellido"/>
+        </Method>
+        <Method name="getPosicion" returnType="String" visibility="public"/>
+        <Method name="setPosicion" returnType="void" visibility="public">
+          <Argument type="String" name="posicion"/>
+        </Method>
+        <Method name="getNumero" returnType="int" visibility="public"/>
+        <Method name="setNumero" returnType="void" visibility="public">
+          <Argument type="int" name="numero"/>
+        </Method>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="JugadorRuleta" package="entidades" visibility="public" xPosition="1691.0" yPosition="560.0">
+      <Fields>
+        <Field name="id" type="int" visibility="package"/>
+        <Field name="nombre" type="String" visibility="package"/>
+        <Field name="muerto" type="boolean" visibility="package"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="int" name="id"/>
+          <Argument type="String" name="nombre"/>
+          <Argument type="boolean" name="muerto"/>
+        </Constructor>
+        <Constructor visibility="public">
+          <Argument type="int" name="id"/>
+          <Argument type="String" name="nombre"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getId" returnType="int" visibility="public"/>
+        <Method name="setId" returnType="void" visibility="public">
+          <Argument type="int" name="id"/>
+        </Method>
+        <Method name="getNombre" returnType="String" visibility="public"/>
+        <Method name="setNombre" returnType="void" visibility="public">
+          <Argument type="String" name="nombre"/>
+        </Method>
+        <Method name="isMuerto" returnType="boolean" visibility="public"/>
+        <Method name="setMuerto" returnType="void" visibility="public">
+          <Argument type="boolean" name="muerto"/>
+        </Method>
+        <Method name="disparo" returnType="boolean" visibility="public">
+          <Argument type="Revolver" name="r"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Persona" package="entidades" visibility="public" xPosition="357.0" yPosition="498.0">
+      <Fields>
+        <Field name="nombre" type="String" visibility="package"/>
+        <Field name="apellido" type="String" visibility="package"/>
+        <Field name="documento" type="DNI" visibility="package"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="String" name="nombre"/>
+          <Argument type="String" name="apellido"/>
+          <Argument type="DNI" name="documento"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getNombre" returnType="String" visibility="public"/>
+        <Method name="setNombre" returnType="void" visibility="public">
+          <Argument type="String" name="nombre"/>
+        </Method>
+        <Method name="getApellido" returnType="String" visibility="public"/>
+        <Method name="setApellido" returnType="void" visibility="public">
+          <Argument type="String" name="apellido"/>
+        </Method>
+        <Method name="getDocumento" returnType="DNI" visibility="public"/>
+        <Method name="setDocumento" returnType="void" visibility="public">
+          <Argument type="DNI" name="documento"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Revolver" package="entidades" visibility="public" xPosition="747.0" yPosition="570.0">
+      <Fields>
+        <Field name="posicionActual" type="int" visibility="package"/>
+        <Field name="posicionBala" type="int" visibility="package"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="int" name="posicionActual"/>
+          <Argument type="int" name="posicionBala"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getPosicionActual" returnType="int" visibility="public"/>
+        <Method name="setPosicionActual" returnType="void" visibility="public">
+          <Argument type="int" name="posicionActual"/>
+        </Method>
+        <Method name="getPosicionBala" returnType="int" visibility="public"/>
+        <Method name="setPosicionBala" returnType="void" visibility="public">
+          <Argument type="int" name="posicionBala"/>
+        </Method>
+        <Method name="llenarRevolver" returnType="void" visibility="public"/>
+        <Method name="disparar" returnType="boolean" visibility="public"/>
+        <Method name="siguienteRecamara" returnType="void" visibility="public"/>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Enum name="Palo" package="entidades" visibility="public" xPosition="682.0" yPosition="39.0">
+      <Literals>
+        <Literal name="OROS"/>
+        <Literal name="ESPADAS"/>
+        <Literal name="BASTOS"/>
+        <Literal name="COPAS"/>
+      </Literals>
+    </Enum>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <HasRelation name="cartasMonton" source="entidades.Baraja" target="entidades.Carta" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="ArrayList&lt;Carta&gt;"/>
+    <HasRelation name="plantel" source="entidades.Equipo" target="entidades.Jugador" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="List&lt;Jugador&gt;"/>
+    <HasRelation name="cartas" source="entidades.Baraja" target="entidades.Carta" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="ArrayList&lt;Carta&gt;"/>
+    <HasRelation name="documento" source="entidades.Persona" target="entidades.DNI" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="entidades.Carta" target="entidades.Palo" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="entidades.Equipo" target="entidades.Jugador" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="entidades.Persona" target="entidades.DNI" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="entidades.JugadorRuleta" target="entidades.Revolver" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="entidades.Juego" target="entidades.JugadorRuleta" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="revolver" source="entidades.Juego" target="entidades.Revolver" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="palo" source="entidades.Carta" target="entidades.Palo" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="entidades.Juego" target="entidades.Revolver" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="jugadores" source="entidades.Juego" target="entidades.JugadorRuleta" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="ArrayList&lt;JugadorRuleta&gt;"/>
+  </ClassDiagramRelations>
+</ClassDiagram>

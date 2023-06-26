@@ -1,0 +1,218 @@
+Enc44 G11 Ej1:
+
+Main: --------------------------
+
+
+package enc44.ej1;
+
+import entidades.Perro;
+import entidades.Persona;
+import java.util.Scanner;
+
+public class Enc44Ej1 {
+
+    public static void main(String[] args) {
+        
+        /* 1. 
+        Main:
+        1. crear 2 personas, crear 2 perros.
+        2. asignar a cada persona un perro.
+        3. mostrar desde PERSONA, informacion perro y persona. */
+        
+        Scanner leer = new Scanner(System.in).useDelimiter("\n");
+        
+        Persona p1 = new Persona();
+        Persona p2 = new Persona();
+       
+        System.out.println("nombre:");
+        p1.setNombre(leer.next());
+        System.out.println("apellido:");
+        p1.setApellido(leer.next());
+        System.out.println("edad:");
+        p1.setEdad(leer.nextInt());
+        System.out.println("documento:");
+        p1.setDocumento(leer.nextLong());
+        System.out.println("perro:");
+        Perro chiquito1 = new Perro();
+        System.out.println("nombre perro:");
+        chiquito1.setNombre(leer.next());
+        System.out.println("raza perro:");
+        chiquito1.setRaza(leer.next());
+        System.out.println("edad perro:");
+        chiquito1.setEdad(leer.nextInt());
+        System.out.println("tamaño perro:");
+        chiquito1.setTamaño(leer.nextDouble());
+        p1.setMascota(chiquito1);
+        
+//        System.out.println("--------");
+//        System.out.println("nombre:");
+//        p2.setNombre(leer.next());
+//        System.out.println("apellido:");
+//        p2.setApellido(leer.next());
+//        System.out.println("edad:");
+//        p2.setEdad(leer.nextInt());
+//        System.out.println("documento:");
+//        p2.setDocumento(leer.nextLong());
+//        System.out.println("perro:");
+//        Perro chiquito2 = new Perro();
+//        System.out.println("nombre perro:");
+//        chiquito2.setNombre(leer.next());
+//        System.out.println("raza perro:");
+//        chiquito2.setRaza(leer.next());
+//        System.out.println("edad perro:");
+//        chiquito2.setEdad(leer.nextInt());
+//        System.out.println("tamaño perro:");
+//        chiquito2.setTamaño(leer.nextDouble());
+//        p2.setMascota(chiquito2);
+        
+        System.out.println("impresion de datos:");
+        System.out.println("Persona y Perro: 1");
+        p1.toString();
+        System.out.println(p1.toString());
+    }
+    
+}
+
+Persona: -------------------------------
+
+
+package entidades;
+
+public class Persona {
+    /* 1. Persona:
+        1.1 Atributos:
+            - nombre
+            - apellido
+            - edad
+            - documento
+            - OBJ PERRO */
+    private String nombre;
+    private String apellido;
+    private int edad;
+    private long documento;
+    private Perro mascota;
+
+    public Persona() {
+    }
+
+    public Persona(String nombre, String apellido, int edad, long documento, Perro mascota) {
+        this.nombre = nombre;
+        this.apellido = apellido;
+        this.edad = edad;
+        this.documento = documento;
+        this.mascota = mascota;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public String getApellido() {
+        return apellido;
+    }
+
+    public void setApellido(String apellido) {
+        this.apellido = apellido;
+    }
+
+    public int getEdad() {
+        return edad;
+    }
+
+    public void setEdad(int edad) {
+        this.edad = edad;
+    }
+
+    public long getDocumento() {
+        return documento;
+    }
+
+    public void setDocumento(long documento) {
+        this.documento = documento;
+    }
+
+    public Perro getMascota() {
+        return mascota;
+    }
+
+    public void setMascota(Perro mascota) {
+        this.mascota = mascota;
+    }
+
+    @Override
+    public String toString() {
+        return "Persona{" + "nombre=" + nombre + ", apellido=" + apellido + ", edad=" + edad + ", documento=" + documento + ", mascota=" + mascota + '}';
+    }
+    
+    
+}
+
+Perro: -------------------------------
+
+
+package entidades;
+
+public class Perro {
+    /* 2. Perro:
+        2.1 Atributos:
+            - nombre
+            - raza
+            - edad
+            - tamaño  */
+    private String nombre;
+    private String raza;
+    private int edad;
+    private double tamaño;
+
+    public Perro() {
+    }
+
+    public Perro(String nombre, String raza, int edad, double tamaño) {
+        this.nombre = nombre;
+        this.raza = raza;
+        this.edad = edad;
+        this.tamaño = tamaño;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public String getRaza() {
+        return raza;
+    }
+
+    public void setRaza(String raza) {
+        this.raza = raza;
+    }
+
+    public int getEdad() {
+        return edad;
+    }
+
+    public void setEdad(int edad) {
+        this.edad = edad;
+    }
+
+    public double getTamaño() {
+        return tamaño;
+    }
+
+    public void setTamaño(double tamaño) {
+        this.tamaño = tamaño;
+    }
+
+    @Override
+    public String toString() {
+        return "Perro{" + "nombre:" + nombre + ", raza:" + raza + ", edad:" + edad + ", tamano=" + tamaño + '}';
+    }
+    
+}
