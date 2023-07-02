@@ -1,3 +1,4 @@
+package main;
 
 import java.util.Scanner;
 import metodos.DivicionNumero;
@@ -13,15 +14,15 @@ public class Ejercicio3Excepciones {
         double num1;
         double num2;
         
-        num1 = trier(input.next());
-        num2 = trier(input.next());
+        num1 = parseInt(input.next());
+        num2 = parseInt(input.next());
 
         DivicionNumero dn = new DivicionNumero();
 
         System.out.println(dn.DivicionNumero(num1, num2));
     }
 
-    public static int trier(String num) {
+    public static int parseInt(String num) {
         int n;
         
         try {

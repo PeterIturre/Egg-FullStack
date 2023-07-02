@@ -18,5 +18,5 @@ public class EjerciciosDeComprension {
         }
         System.out.println("Sentencia 4");
     }
-    
+
 }

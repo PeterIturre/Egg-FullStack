@@ -1,2 +1,3 @@
 Relaciones: Extras y Check
 Herencia: Todo
+Excepciones: Ejercicios y extras
