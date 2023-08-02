@@ -1,0 +1,62 @@
+h1 {
+    color: rgb(0, 102, 102);
+}
+
+h2 {
+    color: blue
+}
+
+strong {
+    color: red;
+}
+
+span.destacado {
+    color: orange;
+}
+
+#especial {
+    color: purple;
+}
+
+#adicional{
+    color: olive;
+}
+
+a {
+    color: red;
+}
+
+a.linkVerde {
+    color: green;
+}
+
+em {
+    color:blue;
+}
+
+#adicional p a {
+    color: green;
+}
+
+/* TABLA */
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+th.especial {
+    color: orange;
+}
+
+table tbody, em {
+    color: green;
+}
+
+table tbody tr td strong, th {
+    color: red;
+}
+
+table tfoot tr th {
+    color: red;
+}

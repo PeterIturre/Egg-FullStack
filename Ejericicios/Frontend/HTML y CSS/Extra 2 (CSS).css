@@ -1,0 +1,21 @@
+table, td, th {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 10px;
+}
+
+table th[scope=col] {
+    background-color: lightgray;
+}
+
+table th[scope=row] {
+    text-align: left;
+    background-color:#E6F3FF ;
+}
+
+#euro, #libra {
+    background-color: #FFFFCC;
+}
+
