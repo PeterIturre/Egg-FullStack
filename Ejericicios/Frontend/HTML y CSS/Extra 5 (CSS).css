@@ -1,0 +1,55 @@
+.image-container {
+    overflow: auto
+}
+
+img {
+    float: left;
+    margin-right: 10px;
+}
+
+table {
+    width: 400px;
+    height: 250px;
+    background-color: rgb(231, 240, 214);
+    text-align: center
+}
+
+.precio {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    font-weight: 900;
+}
+
+.productoMuestra {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.botonComprar {
+    background-color: green;
+    color: #ffffff;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.botonComprar:hover {
+    background-color: rgb(99, 160, 9);
+    color: white;
+}
+
+.botonAgregar {
+    background-color: green;
+    color: white;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.botonAgregar:hover {
+    background-color: rgb(99, 160, 9);
+    color: #ecf0f1;
+}

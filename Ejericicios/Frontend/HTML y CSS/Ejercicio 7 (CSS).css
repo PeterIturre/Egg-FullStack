@@ -2,13 +2,7 @@
     background-color: bisque;
 }
 
-h1 {
-    font-family: 'Courier new';
-    font-weight: 900;
-    text-align: center;
-}
-
-h2 {
+h1 h2{
     font-family: 'Courier new';
     font-weight: 900;
     text-align: center;
