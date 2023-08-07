@@ -1,0 +1,15 @@
+body {
+  background-image: url(background.jpg);
+}
+
+nav {
+  background: linear-gradient(to right, #00dbdb 0%, #002d81 25%, #002d81 65%, #6e00ec 80%);
+}
+
+.navbar-brand {
+  padding-bottom: .5rem;
+}
+
+nav a {
+  color: aliceblue;
+}

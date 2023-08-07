@@ -1,55 +1,97 @@
+/* NAVBAR*/
+body {
+  background-image: url(../Imagenes/LandingPage.jpg);
+}
+
+nav {
+  background: linear-gradient(
+    to right,
+    #6c0020,
+    #ff593e 10%,
+    #fc543a 10%,
+    #ffdbc5 80%
+  );
+}
+
+.navbar-brand {
+  color: white;
+  font-weight: 650;
+}
+
+.nav-link {
+  color: white;
+}
+
+a:hover {
+  color: #6c0020;
+}
+
+/* IMAGEN MAS FORM */
+
+#popUp {
+    padding: 25px;
+}
+
+/* EJERCICIO */
+
 .image-container {
-    overflow: auto
+  overflow: auto;
 }
 
 img {
-    float: left;
-    margin-right: 10px;
+  float: left;
+  margin-right: 10px;
 }
 
 table {
-    width: 400px;
-    height: 250px;
-    background-color: rgb(231, 240, 214);
-    text-align: center
+  width: 400px;
+  height: 250px;
+  background-color: #ff974c;
+  text-align: center;
 }
 
 .precio {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 40px;
-    font-weight: 900;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 40px;
+  font-weight: 900;
+  text-align: center;
 }
 
 .productoMuestra {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 40px;
-    font-weight: 700;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  text-align: center;
 }
 
+/* .ejTXT {
+    text-align: center;
+} */
+
 .botonComprar {
-    background-color: green;
-    color: #ffffff;
-    font-size: 16px;
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;
+  background-color: #7e0032;
+  color: white;
+  font-size: 16px;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
 }
 
 .botonComprar:hover {
-    background-color: rgb(99, 160, 9);
-    color: white;
+  background-color: #52002f;
+  color: white;
 }
 
 .botonAgregar {
-    background-color: green;
-    color: white;
-    font-size: 16px;
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;
+  background-color: #7e0032;
+  color: white;
+  font-size: 16px;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
 }
 
 .botonAgregar:hover {
-    background-color: rgb(99, 160, 9);
-    color: #ecf0f1;
+  background-color: #52002f;
+  color: white;
 }

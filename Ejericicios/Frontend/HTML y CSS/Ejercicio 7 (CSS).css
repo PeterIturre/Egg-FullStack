@@ -1,8 +1,9 @@
 *{
-    background-color: bisque;
+    background-color: rgb(236, 147, 39);
 }
 
 h1 h2{
+    text-align: center;
     font-family: 'Courier new';
     font-weight: 900;
     text-align: center;
