@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <script>
+      var num1 = +prompt("Numero 1");
+      var num2 = +prompt("Numero 2");
+      var key;
+
+      do {
+        switch (
+          (key = prompt(`MENU
+        1. SUMAR
+        2. RESTAR
+        3. MULTIPLICAR
+        4. DIVIDIR`))
+        ) {
+          case "1":
+            console.log(`${num1} + ${num2} = ${num1 + num2}`);
+            break;
+          case "2":
+            console.log(`${num1} - ${num2} = ${num1 - num2}`);
+            break;
+          case "3":
+            console.log(`${num1} * ${num2} = ${num1 * num2}`);
+            break;
+          case "4":
+            console.log(`${num1} / ${num2} = ${num1 / num2}`);
+            break;
+          case "X":
+            console.log("Saliendo...");
+            continue;
+          default:
+            console.log(
+              "La opcion que elijio no es valida. intentelo nuevamente. (Para salir apriete X)"
+            );
+            break;
+        }
+      } while (key != 1 || key != 2 || key != 3 || key != 4);
+    </script>
+  </body>
+</html>

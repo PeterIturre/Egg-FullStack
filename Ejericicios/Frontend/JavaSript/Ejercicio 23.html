@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p id="parrafo">
+      El paisaje natural será un espacio recorrido pero no organizado, y con
+      densidades de población bajas. Se trata de los espacios ocupados por
+      sociedades de recolectores, pastores, cazadores y pescadores que tienen un
+      conocimiento muy íntimo y especializado del medio. El área necesaria para
+      procurarse los recursos debe ser muy amplia ya que dependen de lo que
+      ofrece la naturaleza.
+    </p>
+
+    <script>
+      var parrafo = document.getElementById("parrafo").innerHTML.split(" ");
+
+      var palabrasMayores = [];
+
+      for (const palabra of parrafo) {
+        if (palabra.length > 8) {
+          palabrasMayores.push('<span style="background-color:yellow;"></span>');
+        } else {
+          palabrasMayores.push(palabra);
+        }
+      }
+    </script>
+  </body>
+</html>

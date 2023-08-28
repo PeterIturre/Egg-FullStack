@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script id="metodos">
+      const PI = 3.141592;
+      function areaCirculo(radio) {
+        return (PI * radio) ^ 2;
+      }
+      function perimetroCirculo(radio) {
+        return 2 * PI * radio;
+      }
+
+      // sino estan las funciones flecha...
+
+      let areaCirculoFlecha = (radio) => (PI * radio) ^ 2;
+      let perimetroCirculoFlecha = (radio) => 2 * PI * radio;
+    </script>
+
+    <script id="programa">
+      let radio = prompt("Ingrese el radio del circulo");
+
+      console.log("Calculando el perimetro del circulo");
+      console.log(perimetroCirculo(radio));
+
+      console.log("Calculando el area del circulo");
+      console.log(areaCirculo(radio));
+
+      console.log("Funciones flecha...");
+
+      // funciones flecha
+      console.log(perimetroCirculoFlecha(radio));
+      console.log(areaCirculoFlecha(radio));
+    </script>
+  </body>
+</html>

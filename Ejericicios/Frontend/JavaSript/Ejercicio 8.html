@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      var num = 0;
+      var max = 0;
+      var min = 0;
+      var suma = 0;
+      var i = 0;
+
+      do {
+        num = +prompt("Ingrese un numero (Para terminar ingrese 0)");
+        if (num > max) {
+          max = num;
+        } else if (num < min) {
+          min = num;
+        }
+
+        console.log("Ingreso: " + num);
+        suma += num;
+        i++;
+      } while (num != 0);
+
+      console.log("El promedio de todos los numeros ingresados es:" + suma / i);
+      console.log("El mayor numero ingresado fue: " + max);
+      console.log("El menor numero ingresado fue: " + min);
+    </script>
+  </body>
+</html>

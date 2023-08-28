@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script id="metodos">
+      function cargarLibro(libro) {
+        console.log("Cargando libro...");
+
+        for (const atributo in libro) {
+          libro[atributo] = prompt("Ingrese el " + atributo + " del libro");
+        }
+      }
+
+      function mostrarLibro(libro) {
+        console.log("Mostrando libro...");
+
+        for (const atributo in libro) {
+          console.log(libro[atributo]);
+        }
+      }
+    </script>
+    <script id="programa">
+      function libro(ISBN, Titulo, Autor, NumeroDePaginas) {
+        this.ISBN = ISBN;
+        this.Titulo = Titulo;
+        this.Autor = Autor;
+        this.NumPag = NumeroDePaginas;
+      }
+
+      let libro1 = new libro();
+
+      cargarLibro(libro1);
+      mostrarLibro(libro1);
+    </script>
+  </body>
+</html>

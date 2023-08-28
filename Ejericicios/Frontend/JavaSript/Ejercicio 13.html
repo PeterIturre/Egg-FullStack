@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // Muestro 3 formas distintas de hacer un objeto y muestro los atributos
+
+      let Persona1 = new Object();
+
+      Persona1.nombre = "Pedro";
+      Persona1.edad = 22;
+      Persona1.sexo = "H";
+      Persona1.peso = 75;
+      Persona1.altura = 175;
+
+      let Persona2 = {
+        nombre: "Fede",
+        edad: 22,
+        sexo: "H",
+        peso: 75,
+        altura: 175,
+      };
+
+      function Personas3(nombre, edad, sexo, peso, altura) {
+        this.nombre = nombre;
+        this.edad = edad;
+        this.sexo = sexo;
+        this.peso = peso;
+        this.altura = altura;
+      }
+
+      let Persona3 = new Personas3("Agus", 22, "H", 75, 175);
+
+      console.log("Mostrando Persona1 " + Persona1);
+      console.log(Persona1.nombre);
+      console.log(Persona1.edad);
+      console.log(Persona1.sexo);
+      console.log(Persona1.peso);
+      console.log(Persona1.altura);
+
+      console.log("Mostrando Persona2 " + Persona2);
+      console.log(Persona2.nombre);
+      console.log(Persona2.edad);
+      console.log(Persona2.sexo);
+      console.log(Persona2.peso);
+      console.log(Persona2.altura);
+
+      console.log("Mostrando Persona3 " + Persona3);
+      console.log(Persona3.nombre);
+      console.log(Persona3.edad);
+      console.log(Persona3.sexo);
+      console.log(Persona3.peso);
+      console.log(Persona3.altura);
+
+      console.log("Mostrando con el FOR IN");
+      for (const atributo in Persona1) {
+        console.log(Persona1[atributo]);
+      }
+
+    </script>
+  </body>
+</html>
