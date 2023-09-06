@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let matriz = [[3], [6], [9], [12], [15]];
+
+        let arreglo = matriz.map(function (i) {
+         return i[0] + 3;
+        });
+
+
+      // En este caso FLATMAP da el mismo resultado que MAP por que es un sub arreglo
+      // con un solo elemento por cada arreglo
+
+    //   let arreglo = matriz.flatMap(function (i) {
+    //     return i[0] + 3;
+    //   });
+
+      console.log(arreglo);
+    </script>
+  </body>
+</html>

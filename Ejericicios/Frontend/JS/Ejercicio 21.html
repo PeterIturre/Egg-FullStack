@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function Persona(nombre, edad, sexo, peso, altura) {
+        this.nombre = nombre;
+        this.edad = edad;
+        this.sexo = sexo;
+        this.peso = peso;
+        this.altura = altura;
+      }
+    </script>
+
+    <script>
+      let p1 = new Persona("Pedro", 22, "H", 75, 175);
+
+      let propiedades = Object.values(p1);
+      console.log(propiedades);
+    </script>
+  </body>
+</html>
