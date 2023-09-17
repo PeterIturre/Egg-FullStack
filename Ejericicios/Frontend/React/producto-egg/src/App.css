@@ -1,3 +1,9 @@
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
 body {
   background-color: rgb(54, 54, 54);
 }
@@ -22,6 +28,7 @@ body {
 }
 
 .productos {
+  flex: 1;
   margin-top: 30px;
   margin-bottom: 30px;
   display: flex;
@@ -50,4 +57,31 @@ body {
   width: 30px;
   height: 30px;
   cursor: pointer;
+}
+
+.producto .no-fav-icon {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.detalle {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.detalle img {
+  width: 40%;
+  height: 300px;
+}
+
+blockquote {
+  border-inline-start-color: lightskyblue ;
+}
+
+
+mark {
+  background-color: lightskyblue;
 }
